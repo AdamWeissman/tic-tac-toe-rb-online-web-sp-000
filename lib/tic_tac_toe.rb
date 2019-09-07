@@ -62,6 +62,7 @@ def won?(board)
     board[combo[1]] == board[combo[2]] &&
     position_taken?(board, combo[0])
   end
+  yield
 end
 
 def full?(board)
@@ -77,12 +78,7 @@ def over?(board)
 end
 
 def winner?(board)
-  who_won = won?(board)
-  if who_won[0] == "X"
-    puts "X"
-  elsif who_won[0] = "O"
-    puts "O"
-  end
+  board.won? ? 
 end
 
 
