@@ -39,7 +39,7 @@ def turn(board)
   num = gets.strip
   index = input_to_index(num)
   if valid_move?(board, index)
-    move(board, index, token = "X")
+    move(board, index, token = current_player(board))
   else
     puts "Invalid move."
     turn(board)
