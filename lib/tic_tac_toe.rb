@@ -82,8 +82,9 @@ end
 #  end
 #end
 
-def winner(board)
-  board[won?(board)[0]] ? board[won?(board)[0]] : nil 
+def winner(board) {won?(board) == false; return nil}
+  yield
+  board[won?(board)[0]] 
 end
 
 #def winner(board)  NAMEERROR
