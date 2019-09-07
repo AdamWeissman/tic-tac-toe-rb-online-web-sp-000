@@ -82,7 +82,7 @@ end
 #  end
 #end
 
-def winner(board) {!won?(board) then return nil}
+def winner(board) {!won?(board) then nil}
   yield
   board[won?(board)[0]] 
 end
