@@ -76,8 +76,10 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
-def winner?(board)
-  won?(board)? ? return won?(board)[0] : return nil
+def winner(board)
+  if winning_combo = won?(board)
+    board[winning_combo.first]
+  end
 end
 
 
