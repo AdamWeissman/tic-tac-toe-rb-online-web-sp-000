@@ -86,7 +86,7 @@ end
 #  board[won?(board)[0]]
 #end
 
-def winner(board)
+#def winner(board)
   board[someone_won[0]] if someone_won = won?(board)
 end
 
