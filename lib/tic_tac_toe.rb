@@ -78,7 +78,11 @@ end
 
 def winner?(board)
   who_won = won?(board)
-  who_won[0] == "X"? ? "X" : "O"
+  if who_won[0] == "X"
+    puts "X"
+  elsif who_won[0] = "O"
+    puts "O"
+  end
 end
 
 
