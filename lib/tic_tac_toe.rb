@@ -82,7 +82,7 @@ end
 #  end
 #end
 
-def winner(board) {won?(board)}
+def winner(board) {!won?(board) }
   yield
   board[won?(board)[0]] 
 end
