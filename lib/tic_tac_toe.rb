@@ -76,12 +76,15 @@ def over?(board)
   won?(board) || draw?(board)
 end
 
-def winner(board)
-  if someone_won = won?(board)
-    return board[someone_won[0]]
-  end
-end
+#def winner(board)
+#  if someone_won = won?(board)
+#    return board[someone_won[0]]
+#  end
+#end
 
+def winner(board)
+  board[someone_won[0]] if someone_won = won?(board)
+end
 
 
 
