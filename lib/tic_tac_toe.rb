@@ -80,6 +80,7 @@ def winner(board)
   if someone_won = won?(board)
   return someone_won[0]
 end
+end
 
 
 
