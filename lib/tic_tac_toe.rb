@@ -77,6 +77,8 @@ def over?(board)
 end
 
 def winner?(board)
+  who_won = won?(board)
+  who_won[0] == "X"? ? "X" : "O"
 end
 
 
