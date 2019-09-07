@@ -77,7 +77,7 @@ def over?(board)
 end
 
 def winner?(board)
-  won?(board)? ? return won?(board)[0] : nil
+  won?(board)? ? return won?(board)[0] : return nil
 end
 
 
