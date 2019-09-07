@@ -83,7 +83,7 @@ end
 #end
 
 def winner(board)
-  board[someone_won[0]] if someone_won == won?(board)
+  board[someone_won[0]] if someone_won = won?(board)
 end
 
 
