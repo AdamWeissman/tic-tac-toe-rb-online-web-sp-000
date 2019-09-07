@@ -83,7 +83,7 @@ end
 #end
 
 def winner(board)
-  board[won?(board)[0]] unless board[won?(board)[0]] == nil then false 
+  board[won?(board)[0]] unless board[won?(board)[0]] == nil then nil 
 end
 
 #def winner(board)  NAMEERROR
