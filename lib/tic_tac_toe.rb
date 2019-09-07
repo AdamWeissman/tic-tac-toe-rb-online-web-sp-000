@@ -64,6 +64,7 @@ def won?(board)
   end
   yield
 end
+end
 
 def full?(board)
   board.none?(" ")
