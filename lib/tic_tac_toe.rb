@@ -88,9 +88,5 @@ def winner(board)
   end
 end
 
-#def winner(board)  NAMEERROR
-#  board[someone_won[0]] if someone_won = won?(board)
-#end
-
 
 
