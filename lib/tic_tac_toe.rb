@@ -77,7 +77,7 @@ def over?(board)
 end
 
 def winner(board)
-  someone_won = won?(board)
+  if someone_won = won?(board)
   return someone_won[0]
 end
 
